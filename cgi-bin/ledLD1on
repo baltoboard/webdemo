@@ -1,0 +1,11 @@
+#!/bin/sh
+
+echo none > /sys/class/leds/LD1/trigger
+echo 1 > /sys/class/leds/LD1/brightness
+
+date=`date -u '+%a, %d %b %Y %H:%M:%S %Z'`
+
+cat << EOF
+Content-type: text/plain
+Expires: $date
+

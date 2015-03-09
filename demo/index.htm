@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <title>Balto WebServer Demo</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/script.js"></script>
+  </head>
+  <body>
+    <h1>Balto Board WebServer Demo</h1>
+
+    <table>
+
+      <tr>
+        <td>Click to change LD1 led function</td>
+        <td>
+          <input type="radio" name="LD1" value="off" onclick="LEDfunction(0)" />off<br/>
+          <input type="radio" name="LD1" value="on" onclick="LEDfunction(1)" />on<br/>
+          <input type="radio" name="LD1" value="heartbeat" onclick="LEDfunction(2)" />heartbeat
+        </td>
+      </tr>
+
+      <tr>
+        <td>Click on the flipswitch to toggle SSH daemon</td>
+        <td>
+          <div class="onoffswitch">
+            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="SSHDswitch" onchange="SSHDfunction(this.checked)" />
+            <label class="onoffswitch-label" for="SSHDswitch">
+              <span class="onoffswitch-inner">
+                <span class="onoffswitch-active">
+                  <span class="onoffswitch-switch">ON</span>
+                </span>
+                <span class="onoffswitch-inactive">
+                  <span class="onoffswitch-switch">OFF</span>
+                </span>
+              </span>
+            </label>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan='2'> <img src="img/background.png" alt="logo" /> </td>
+      </tr>
+
+    </table>
+
+  </body>
+</html>
